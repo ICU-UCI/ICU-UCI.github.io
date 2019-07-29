@@ -1,4 +1,7 @@
 ---
+# All the Tags of posts.
+# © 2017-2019 Cotes Chung
+# MIT License
 layout: page
 title:
   zh: 标签集
