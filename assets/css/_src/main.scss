@@ -1055,8 +1055,12 @@ a.tag:hover {
 }
 
 #page-tag ul>li>a,
-#page-category ul>li>a, {
+#page-category ul>li>a, { /* post's title */
   font-size: 1.1rem;
+}
+
+#page-tag ul>li>span:last-child { /* post's date */
+  word-break: keep-all;
 }
 
 #page-tag h1>i { // tag icon
@@ -1182,6 +1186,7 @@ div.tooltip-inner { /* Overrided BS4 Tooltip */
 
   #page-tag ul>li>a,
   #page-category ul>li>a {
+    max-width: 71%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
