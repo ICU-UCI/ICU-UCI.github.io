@@ -112,3 +112,6 @@ comments: false
 ```
 
 
+## Learn More
+For more information on writting, please visit the [Jekyll Docs: Posts](https://jekyllrb.com/docs/posts/)
+

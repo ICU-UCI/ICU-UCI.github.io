@@ -3,8 +3,8 @@
 # MIT License
 
 title: "Chirpy"
-slogan: "A text-based Jekyll template."
-description: "A text-based Jekyll template." # RSS feed
+slogan: "A text-based Jekyll theme."
+description: "A text-based Jekyll theme." # RSS feed
 logo: "/assets/img/sample/ant.png"
 
 comments: true  # boolean type, the gobal switch of posts' comments.
