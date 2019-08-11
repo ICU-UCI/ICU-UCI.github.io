@@ -17,7 +17,7 @@
     {% endif%}
     {% capture item %}
       {{ post.lastmod | date: DATE_FORMAT }}::{{ post.title }}::{{ post.url }}
-    {% endcapture%}
+    {% endcapture %}
     {% assign lastmod_list = lastmod_list | push: item %}
   {% endfor %}
 
@@ -26,13 +26,13 @@
     <h3 data-toc-skip>
       {{ site.data.settings.panel.lastmod[lang] }}
     </h3>
-     <ul class="post-content pl-0 mt-2 pb-1">
+    <ul class="post-content pl-0 mt-2 pb-1">
     {% assign MAX_SIZE = 5 %}
     {% assign sum = 0 %}
-    {% assign sorted_posts = lastmod_list | sort | reverse %}
+    {% assign sorted_posts = lastmod_list | sort %}
     {% for post in sorted_posts %}
       {% assign meta = post | split: "::" %}
-      <li><a href="{{ meta[2] }}">{{ meta[1] }}</a></li>
+      <li><a href="{{ meta[2] | prepend: site.baseurl }}">{{ meta[1] }}</a></li>
       {% assign sum = sum | plus: 1 %}
       {% if sum >= MAX_SIZE %}
         {% break %}
