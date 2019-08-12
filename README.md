@@ -23,9 +23,34 @@ It is also used by my [Chinese blog](https://blog.cotes.info).
 * Google Analytics
 * Pageviews (Advanced)
 
-## Usage
+## Quick start
 
-Please refer to the [documentation](https://chirpy.cotes.info/posts/getting-started/) for details.
+Please install the following environment dependencies first:
+
+- [Ruby](https://www.ruby-lang.org/en/downloads/)
+- [RubyGem](https://rubygems.org/pages/download)
+- [Bundler](https://bundler.io/)
+- [Jekyll](https://jekyllrb.com/)
+- [Python](https://www.python.org/downloads/) 
+- [ruamel.yaml](https://pypi.org/project/ruamel.yaml/)
+
+Clone the repository to local, then go to the root directory of the repository.
+
+Install the Jekyll plugins:
+
+```
+$ bundle install
+```
+
+Boot your site locally:
+
+```
+$ bash run.sh
+```
+
+Open your favorite brower and visit [http://127.0.0.1:4000](http://127.0.0.1:4000).
+
+Please refer to the [documentation](https://chirpy.cotes.info/posts/getting-started/) for details, hope you like it.
 
 
 ## License
