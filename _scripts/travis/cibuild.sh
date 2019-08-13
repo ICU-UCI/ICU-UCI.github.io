@@ -182,9 +182,9 @@ main() {
   echo "" # new line
 
   cd $TRAVIS_BUILD_DIR
-  for repo in "${!TASKS[@]}"; do
-    oversee_gh_pages $repo ${TASKS[$repo]}
-  done
+  # for repo in "${!TASKS[@]}"; do
+  #   oversee_gh_pages $repo ${TASKS[$repo]}
+  # done
 }
 
 
